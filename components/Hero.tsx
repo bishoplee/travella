@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Button from "./Button"
 
 const Hero = () => {
   return (
@@ -31,6 +32,54 @@ const Hero = () => {
                 height={24}
               />
             ))}
+          </div>
+
+          <p className="bold-16 lg:bold-20 text-blue-70">
+            198k{' '}
+            <span className="regular-16 lg:regular-20 ml-1">Excellent Reviews</span>
+          </p>
+        </div>
+
+        <div className="flex flex-col w-full gap-3 sm:flex-row">
+          <Button
+            type="button"
+            title="Download App"
+            variant="btn_green"
+          />
+          <Button
+            type="button"
+            title="How it Works"
+            icon="/play.svg"
+            variant="btn_white_text"
+          />
+        </div>
+
+        <div className="flex flex-1 items-start relative my-8 sm:my-0 sm:absolute sm:right-20 sm:top-64 xl:top-8 xl:right-64">
+          <div className="relative w-full sm:z-20 sm:w-[268px] flex flex-col gap-8 rounded-3xl sm:opacity-90 bg-green-90 px-7 py-8">
+            
+            <div className="flex flex-col">
+              <div className="flexBetween">
+                <p className="regular-16 text-gray-20">Location</p>
+                <Image
+                  src="/close.svg"
+                  alt="close"
+                  width={24}
+                  height={24}
+                />
+              </div>
+              <p className="bold-20 text-white">Abuja, FCT</p>
+            </div>
+
+            <div className="flexBetween">
+              <div className="flex flex-col">
+                <p className="regular-16 block text-gray-20">Distance</p>
+                <p className="bold-20 text-white">173.28 mi</p>
+              </div>
+              <div className="flex flex-col">
+                <p className="regular-16 block text-gray-20">Elevation</p>
+                <p className="bold-20 text-white">2.040 km</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
