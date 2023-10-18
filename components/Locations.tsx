@@ -1,5 +1,5 @@
-import { PEOPLE_URL } from "@/constants"
-import Image from "next/image"
+import Image from 'next/image'
+import { PEOPLE_URL } from '@/constants'
 
 interface LocationProps {
   backgroundImage: string
@@ -51,8 +51,8 @@ const Places = ({ name, backgroundImage, subtitle, visitCount }: LocationProps) 
 
 const Locations = () => {
   return (
-    <section className='2xl:max-container relative flex flex-col py-10 max-lg:mb-10 lg:py-20'>
-      <div className='hide-scrollbar flex h-[340px] w-full items-start justify-start gap-8 overflow-x-auto'>
+    <section id="locations" className="2xl:max-container relative flex flex-col py-10 max-lg:mb-10 lg:py-20">
+      <div className="hide-scrollbar flex h-[340px] w-full items-start justify-start gap-8 overflow-x-auto">
         <Places
           name="Asokoro"
           backgroundImage="bg-bg-img-1"

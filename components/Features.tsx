@@ -1,11 +1,10 @@
-import { FEATURES } from '@/constants'
 import Image from 'next/image'
-import React from 'react'
+import { FEATURES } from '@/constants'
 
 const Features = () => {
   return (
-    <section className='flex-col flexCenter overflow-hidden bg-feature-bg bg-center bg-no-repeat py-24'>
-      <div className='max-container flex padding-container relative w-full justify-end'>
+    <section id="features" className="flex-col flexCenter overflow-hidden bg-feature-bg bg-center bg-no-repeat py-24">
+      <div className="max-container flex padding-container relative w-full justify-end">
         <div className="flex flex-1 lg:min-h-[900px]">
           <Image
             src="/phone.png"
@@ -16,8 +15,8 @@ const Features = () => {
           />
         </div>
 
-        <div className='z-20 flex w-full flex-col lg:w-[60%]'>
-          <div className='relative'>
+        <div className="z-20 flex w-full flex-col lg:w-[60%]">
+          <div className="relative">
             <Image
               src="/camp.svg"
               alt="camp"
@@ -39,7 +38,6 @@ const Features = () => {
               />
             ))}
           </ul>
-
         </div>
       </div>
     </section>
@@ -55,7 +53,7 @@ interface FeatureItem {
 
 const FeatureItem = ({ title, icon, variant, description }: FeatureItem) => {
   return (
-    <li className='flex w-full flex-1 flex-col items-start'>
+    <li className="flex w-full flex-1 flex-col items-start">
       <div className={`rounded-full p-4 lg:p-7 bg-${variant}-50`}>
         <Image
           src={icon}

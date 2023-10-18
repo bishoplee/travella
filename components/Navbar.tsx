@@ -1,7 +1,7 @@
-import { NAV_LINKS } from "@/constants"
-import Image from "next/image"
-import Link from "next/link"
-import Button from "./Button"
+import Image from 'next/image'
+import Link from 'next/link'
+import Button from './Button'
+import { NAV_LINKS } from '@/constants'
 
 const Navbar = () => {
   return (
